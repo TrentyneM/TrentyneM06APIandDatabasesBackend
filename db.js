@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 try { require("dotenv").config(); } catch {}
 
 // 1) Read the connection string from the environment
-const URI = process.env.MONGODB_URI;
+const URI = ("mongodb+srv://songdbtrent:trentyne@songdb.lkgiwye.mongodb.net/?retryWrites=true&w=majority&appName=songdb")
 
 // 2) Fail fast if it’s missing
 if (!URI) {
