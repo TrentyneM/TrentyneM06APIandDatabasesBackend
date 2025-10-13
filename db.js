@@ -15,11 +15,12 @@ if (!URI) {
 
 // 3) Connect (Mongoose v8+ needs no extra options)
 mongoose
-  .connect(URI)
+  .connect(URI, { dbName: "SongDB" })  
   .then(() => console.log("MongoDB connected"))
   .catch((err) => {
     console.error(" MongoDB connection error:", err.message);
     process.exit(1);
+    userNewURLParser: true
   });
 
 module.exports = mongoose;
