@@ -11,7 +11,7 @@ const secret = process.env.JWT_SECRET || "supersecret";
 const User = require("./models/users");
 
 // Variable needs to be an express server.
-require("./db");                       =
+require("./db");                       
 const Song = require("./models/song"); // models/song.js
 const app = express();
 
